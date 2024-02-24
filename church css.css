@@ -1,0 +1,106 @@
+/* Global styles */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.banner {
+    width: 95%;
+    height: 60vh;
+    background-color: #000;
+    color: #fff;
+    text-align-last: center;
+    padding: 50px;
+  }
+h3{
+    padding-left: 90vh;
+}
+/* header style */
+header {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+  }
+  /* nav style */
+  nav ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav li {
+	margin-left: 30px;
+  }
+  
+  nav li:first-child {
+	margin-left: 0;
+  }
+  
+  nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+  }
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.button:hover {
+	background-color: #444;
+}
+
+/* Contact form styles */
+form {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input,
+textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	background-color: #fff;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+button[type="submit"] {
+	display: block;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	border: none;
+}
+
+button[type="submit"]:hover {
+	background-color: #444;
+}
+
+@media screen and (max-width: 768px) {
+	nav {
+	  display: flex;
+	}
+  }

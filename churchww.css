@@ -1,0 +1,174 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+header {
+    background: #fff;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+nav .logo a {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+    text-decoration: none;
+}
+
+nav .nav-links {
+    display: flex;
+}
+
+nav .nav-links li {
+    list-style: none;
+    margin-left: 2rem;
+}
+
+nav .nav-links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav .nav-links li a:hover {
+    color: #BCBABA;
+}
+
+nav .burger {
+    display: none;
+    cursor: pointer;
+}
+
+nav .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 1024px) {
+    nav .nav-links {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        z-index: 1;
+        transition: all 0.5s ease;
+    }
+
+    nav .nav-links li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav .nav-links li a {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    nav .burger {
+        display: block;
+    }
+
+    header {
+        padding-top: 80px;
+    }
+
+    .showNav {
+        left: 0;
+    }
+}
+
+header .hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+header .hero p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+header .hero .cta-btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+header .hero .cta-btn:hover {
+    background-color: #BCBABA;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 0;
+}
+
+.about h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.about-text {
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.about-text p {
+    margin-bottom: 2rem;
+}
+
+.about .cta-btn {
+    margin-top: 2rem;
+}
+
